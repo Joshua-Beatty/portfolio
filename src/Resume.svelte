@@ -24,10 +24,15 @@
         border-radius: 15px;
     }
     iframe {
-        height: 95%
+        height: 93%
     }
     p {
         margin: 0.5em 0;
 
+    }
+    @media all and (max-width: 750px) {
+        .card{
+            min-width: 80%;
+        }
     }
 </style>

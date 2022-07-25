@@ -3,6 +3,7 @@
 	import Main from "./Main.svelte";
 	import Resume from "./Resume.svelte";
 	import AStyles from "./aStyles.svelte";
+	import Projects from "./Projects.svelte"
 	let currentPage = 0;
 	let title = "Joshua Beatty";
 	if (window.location.hash == "#/projects") {
@@ -26,39 +27,15 @@
 </svelte:head>
 <div class="sidebar">
 	<ul class="menu">
-		<li
-			class:selected={currentPage == 0}
-			on:click={() => {
-				currentPage = 0;
-				history.replaceState(null, null, " ");
-			}}
-		>
-			About
-		</li>
-		<li
-			class:selected={currentPage == -1}
-			on:click={() => {
-				currentPage = -1;
-				window.location.hash = "#/projects";
-			}}
-		>
-			Projects
-		</li>
-		<li
-			class:selected={currentPage == -2}
-			on:click={() => {
-				currentPage = -2;
-				window.location.hash = "#/resume";
-			}}
-		>
-			Resume
-		</li>
+		<li class:selected={currentPage ==  0} on:click={() => {currentPage = 0;history.replaceState(null, null, " ");}} >About</li>
+		<li class:selected={currentPage == -1} on:click={() => {currentPage = -1;window.location.hash = "#/projects";}}  >Projects</li>
+		<li class:selected={currentPage == -2} on:click={() => {currentPage = -2;window.location.hash = "#/resume";}}    >Resume</li>
 	</ul>
 </div>
 
 <div class="container">
 	<Page offset={currentPage}><Main /></Page>
-	<Page offset={currentPage + 1}><Main /></Page>
+	<Page offset={currentPage + 1}><Projects /></Page>
 	<Page offset={currentPage + 2}><Resume /></Page>
 </div>
 <AStyles />
@@ -70,6 +47,9 @@
 		width: 100%;
 		overflow: hidden;
 		height: calc(100% - max(3vh, 63px));
+        background-image: url(/img/gridme.png);
+        background-position: -10px -10px;
+        background-attachment: fixed;
 	}
 	.sidebar {
 		font-family: "Saira Extra Condensed", sans-serif;
@@ -91,8 +71,9 @@
 		font-weight: 600;
 		flex: 1;
 		display: flex;
-		width: 30vw;
+		width: 500px;
 		justify-content: space-evenly;
+		font-size: 1.1em;
 	}
 	.menu > li {
 		transition: all 200ms ease;
@@ -113,5 +94,34 @@
 	.menu > li.selected {
 		color: white;
 		cursor: pointer;
+	}
+	:global(:not(.menu) > p){
+        color: #494e52;
+		font-size: 1.1em;
+    }
+	
+    @media all and (max-width: 750px) {
+		.menu {
+			width: 400px;
+		}
+		.menu > li{
+			font-size: 2rem;
+		}
+	}
+	@media all and (max-width: 400px) {
+		.menu {
+			width: 100%;
+		}
+		.menu > li{
+			font-size: 1.5rem;
+		}
+		.sidebar{
+			display: flex;
+		}
+	}
+	@media all and (max-width: 315px) {
+		.menu > li{
+			font-size: 1.25rem;
+		}
 	}
 </style>

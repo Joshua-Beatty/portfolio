@@ -2,27 +2,23 @@
     <div class="card">
         <div class="bio">
             <h1 class="mainTitle">Joshua <span class="blueText">Beatty</span></h1>
-            <h3 class="mainSubitle"><div>Salt Lake, UT 84009 · <a href="mailto:name@email.com">Joshuatb6@gmail.com</a></div></h3>
+            <h3 class="mainSubitle"><div>Salt Lake, UT 84115 · <a href="mailto:name@email.com">Joshuatb6@gmail.com</a></div></h3>
             <p>Hi! I'm Josh Beatty and I am an incoming freshman at the University of Utah. Engineering wise, my current focus is on software development. In my free time, I spend a lot of time creating digitally. I've created apps, websites, games, and tools. I am proficient in Python, C#, and Lua but have also worked in JavaScript and Java. I have also participated in many different clubs and extracurricular activities including Boy Scouts, Robotics, and the California Scholarship Federation. This fall I will be going to the University of Utah to major in computer science at their college of engineering.</p>
-            <img class="mainPhoto" src="https://joshbeatty.me/img/me.jpeg" alt="Me Joshua Beatty">
+            <img class="mainPhoto" src="/img/me.jpeg" alt="Me Joshua Beatty">
         </div>
     </div>
 </div>
 
 <style>
-    p{
-        
-        color: #868e96
-    }
     .main {
-        height: 100%;
         width: 100%;
         display: grid;
-        place-items: center
+        place-items: center;
+        height: 100%;
     }
     .card{
         padding: 1em;
-        height: 30%;
+        height: fit-content;
         width: 30%;
         min-height: 315px;
         min-width: 675px;
@@ -64,5 +60,26 @@
         position: absolute;
         top: -5rem;
         right: 1rem;
+    }
+    @media all and (max-width: 750px) {
+    
+        .card{
+            min-width: 80%;
+            margin-top: 10rem;
+            padding-top: 3rem;
+            margin-bottom: 2rem;
+        }
+        .mainPhoto {
+            top: -12rem;
+            right: calc(50% - 5rem);
+        }
+        .main {
+            height: fit-content;
+        }
+    }
+    @media all and (max-width: 400px) {
+        .card{
+            margin-top: 12rem;
+        }
     }
 </style>
