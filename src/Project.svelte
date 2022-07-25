@@ -11,7 +11,7 @@
         </div>
         <div class="imgContainer" style={`width:${imageRatio}%`}>
 	        {#each images as image}
-                <img defer src={image.src} alt={image.alt} style={`width:${(100 - 2 *  images.length) / images.length}%`}/>
+                <img defer={window.location.href!="#/projects"} src={image.src} alt={image.alt} style={`width:${(100 - 2 *  images.length) / images.length}%`}/>
             {/each}
         </div>
     </div>

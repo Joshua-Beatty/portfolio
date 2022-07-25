@@ -68,7 +68,6 @@
 		padding: 0;
 		margin: 0;
 		color: #9cc8de;
-		font-weight: 600;
 		flex: 1;
 		display: flex;
 		width: 500px;
