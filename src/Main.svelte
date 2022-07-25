@@ -2,7 +2,7 @@
     <div class="card">
         <div class="bio">
             <h1 class="mainTitle">Joshua <span class="blueText">Beatty</span></h1>
-            <h3 class="mainSubitle"><div>Salt Lake, UT 84115 · <a href="mailto:name@email.com">Joshuatb6@gmail.com</a></div></h3>
+            <h2 class="mainSubitle"><div>Salt Lake, UT 84115 · <a href="mailto:name@email.com">Joshuatb6@gmail.com</a></div></h2>
             <p>Hi! I'm Josh Beatty and I am a sophmore at the University of Utah majoring in computer science. Engineering wise, my current focus is on software development. In my free time, I spend a lot of time creating digitally. I've created apps, websites, games, and tools. I am proficient in Python, C#, and Lua but have also worked in JavaScript and Java. I have also participated in many different clubs and extracurricular activities including Boy Scouts, Robotics, and the California Scholarship Federation.</p>
             <img class="mainPhoto" src="/img/me.jpeg" alt="Me Joshua Beatty">
         </div>
