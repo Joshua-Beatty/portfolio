@@ -1,7 +1,7 @@
 <div class="main" >
     <div class="card">
         <iframe src="https://drive.google.com/file/d/168BeaxoY0yXAmOOLKiL3INCTnUpOkeKw/preview" title="Resume" loading="lazy" data-dashlane-frameid="40802189313" width="100%" height="500px"></iframe>
-        <p>Or download <a href="https://drive.google.com/file/d/168BeaxoY0yXAmOOLKiL3INCTnUpOkeKw/view?usp=sharing" target="_blank">here</a></p>
+        <p><a href="https://drive.google.com/file/d/168BeaxoY0yXAmOOLKiL3INCTnUpOkeKw/view?usp=sharing" target="_blank">Download my resume here</a></p>
     </div>
 </div>
 
