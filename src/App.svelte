@@ -47,7 +47,7 @@
 		width: 100%;
 		overflow: hidden;
 		height: calc(100% - max(3vh, 63px));
-        background-image: url(/img/gridme.png);
+        background-image: url(/img/gridme.webp);
         background-position: -10px -10px;
         background-attachment: fixed;
 	}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://joshbeatty.me/sitemap.txt
