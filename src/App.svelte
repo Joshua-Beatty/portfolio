@@ -6,11 +6,15 @@
 	import Projects from "./Projects.svelte"
 	let currentPage = 0;
 	let title = "Joshua Beatty";
-	if (window.location.hash == "#/projects") {
-		currentPage = -1;
-	} else if (window.location.hash == "#/resume") {
-		currentPage = -2;
-	} 
+	window.addEventListener('hashchange', function() { 
+		if (window.location.hash == "#/projects") {
+				currentPage = -1;
+			} else if (window.location.hash == "#/resume") {
+				currentPage = -2;
+			} else {
+				currentPage = 0;
+			}
+		})
 	$: {
 		if (currentPage == -1) {
 			title = "Projects - Joshua Beatty";
