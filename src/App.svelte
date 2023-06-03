@@ -3,18 +3,13 @@
 	import Main from "./Main.svelte";
 	import Resume from "./Resume.svelte";
 	import AStyles from "./aStyles.svelte";
-	import Projects from "./Projects.svelte"
+	import Projects from "./Projects.svelte";
 	let currentPage = 0;
 	let title = "Joshua Beatty";
-	window.addEventListener('hashchange', function() { 
-		if (window.location.hash == "#/projects") {
-				currentPage = -1;
-			} else if (window.location.hash == "#/resume") {
-				currentPage = -2;
-			} else {
-				currentPage = 0;
-			}
-		})
+	checkHash();
+	window.addEventListener("hashchange", function () {
+		checkHash();
+	});
 	$: {
 		if (currentPage == -1) {
 			title = "Projects - Joshua Beatty";
@@ -24,6 +19,16 @@
 			title = "Joshua Beatty";
 		}
 	}
+
+	function checkHash() {
+		if (window.location.hash == "#/projects") {
+			currentPage = -1;
+		} else if (window.location.hash == "#/resume") {
+			currentPage = -2;
+		} else {
+			currentPage = 0;
+		}
+	}
 </script>
 
 <svelte:head>
@@ -31,9 +36,33 @@
 </svelte:head>
 <div class="sidebar">
 	<ul class="menu">
-		<li class:selected={currentPage ==  0} on:click={() => {currentPage = 0;history.replaceState(null, null, " ");}} >About</li>
-		<li class:selected={currentPage == -1} on:click={() => {currentPage = -1;window.location.hash = "#/projects";}}  >Projects</li>
-		<li class:selected={currentPage == -2} on:click={() => {currentPage = -2;window.location.hash = "#/resume";}}    >Resume</li>
+		<li
+			class:selected={currentPage == 0}
+			on:click={() => {
+				currentPage = 0;
+				history.replaceState(null, null, " ");
+			}}
+		>
+			About
+		</li>
+		<li
+			class:selected={currentPage == -1}
+			on:click={() => {
+				currentPage = -1;
+				window.location.hash = "#/projects";
+			}}
+		>
+			Projects
+		</li>
+		<li
+			class:selected={currentPage == -2}
+			on:click={() => {
+				currentPage = -2;
+				window.location.hash = "#/resume";
+			}}
+		>
+			Resume
+		</li>
 	</ul>
 </div>
 
@@ -51,9 +80,9 @@
 		width: 100%;
 		overflow: hidden;
 		height: calc(100% - max(3vh, 63px));
-        background-image: url(/img/gridme.webp);
-        background-position: -10px -10px;
-        background-attachment: fixed;
+		background-image: url(/img/gridme.webp);
+		background-position: -10px -10px;
+		background-attachment: fixed;
 	}
 	.sidebar {
 		font-family: "Saira Extra Condensed", sans-serif;
@@ -98,16 +127,16 @@
 		color: white;
 		cursor: pointer;
 	}
-	:global(:not(.menu) > p){
-        color: #494e52;
+	:global(:not(.menu) > p) {
+		color: #494e52;
 		font-size: 1.1em;
-    }
-	
-    @media all and (max-width: 750px) {
+	}
+
+	@media all and (max-width: 750px) {
 		.menu {
 			width: 400px;
 		}
-		.menu > li{
+		.menu > li {
 			font-size: 2rem;
 		}
 	}
@@ -115,15 +144,15 @@
 		.menu {
 			width: 100%;
 		}
-		.menu > li{
+		.menu > li {
 			font-size: 1.5rem;
 		}
-		.sidebar{
+		.sidebar {
 			display: flex;
 		}
 	}
 	@media all and (max-width: 315px) {
-		.menu > li{
+		.menu > li {
 			font-size: 1.25rem;
 		}
 	}
