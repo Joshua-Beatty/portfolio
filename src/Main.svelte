@@ -3,7 +3,7 @@
         <div class="bio">
             <h1 class="mainTitle">Joshua <span class="blueText">Beatty</span></h1>
             <h2 class="mainSubitle"><div>Salt Lake, UT 84115 · <a href="mailto:name@email.com">Joshuatb6@gmail.com</a></div></h2>
-            <p>I am the Senior Developer at Pearagon, a HubSpot Diamond Partner. I've created many different apps, websites, games, and tools. I am also a HubSpot Community Champion and a top HubSpot developer. I am proficient in Javascript, C#, and Java. Currently I am studying computer science at the University Of Utah in addition to working at Pearagon.</p>
+            <p>I am a Developer at Pearagon, a HubSpot Diamond Partner. I've created many different apps, websites, games, and tools. I am also a HubSpot Community Champion and a top HubSpot developer. I am proficient in Javascript, C#, and Java. Currently I am studying computer science at the University Of Utah in addition to working at Pearagon.</p>
             <img class="mainPhoto" src="/img/me.jpeg" alt="Me Joshua Beatty">
         </div>
     </div>
