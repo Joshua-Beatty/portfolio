@@ -4,8 +4,7 @@
 <div class="main" >
     <Project title="Budget All" images={[{src:"/img/budget-budget.png", alt:""},{src:"/img/budget-transactions.png", alt:""},{src:"/img/budget-settings.png", alt:""}]}>
         Budget All is a cross-platform budgeting app designed for both desktop and mobile users. Its responsive UI was crafted with React and Typescript.
-        It was built using React, typescript, and Rust, on top of the Tauri framework. The app leverages the Teller API to connect with real bank accounts and credit cards, 
-        allowing users to easily load and manage transactions.<br><br>
+        It was built using React, typescript, and Rust, on top of the Tauri framework. The app leverages the Teller API to connect with real bank accounts and credit cards, allowing users to easily load and manage transactions.<br><br>
         <a href="https://github.com/Joshua-Beatty/Budget-All" target="_blank">View the source on GitHub</a>
     </Project>
     <Project title="MTG Scanner" images={[{src:"/img/mtg-scanner.png", alt:""}]}>
