@@ -21,8 +21,6 @@
         has been a success. It utilizes javascript with node.js and the big decimal library for arbitrary precision. This
         was just a first step into using Tabris, making use of multiple input types as well as a status bar and multiple
         pages with variable recollection.<br><br>
-        <a href="https://apps.apple.com/us/app/prism-calculator/id1516939934?platform=iphone" target="_blank">Download On The Appstore</a><br>
-        <a href="https://play.google.com/store/apps/details?id=me.joshbeatty.PrismCalc" target="_blank">Get It On Google Play</a><br>
         <a href="https://github.com/Joshua-Beatty/Rectangular-Prism-Calculator-Tabris" target="_blank">View the source on GitHub</a>
     </Project>
     <Project title="Excalibur FitScreenAndFill" images={[{src:"/img/fitscreen.webp", alt:"Screenshot of the recolor app"}]}>
@@ -34,8 +32,6 @@
         Recolor is a simple Simon like memory game developed in Corona SDK. Corona is a cross-platform language build on top of Lua.
         Using this framework I was able to build a simple game that I have published to both the google play, and apple app store,
         to positive reception.<br><br>
-        <a href="https://apps.apple.com/us/app/recolor-the-memory-game/id1488708329?platform=iphone" target="_blank">Download On The Appstore</a><br>
-        <a href="https://play.google.com/store/apps/details?id=tk.joshbeatty.recolor" target="_blank">Get It On Google Play</a><br>
         <a href="https://github.com/Joshua-Beatty/Recolor" target="_blank">View the source on GitHub</a>
     </Project>
     <div style="height:2rem"></div>
