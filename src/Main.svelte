@@ -2,8 +2,8 @@
     <div class="card">
         <div class="bio">
             <h1 class="mainTitle">Joshua <span class="blueText">Beatty</span></h1>
-            <h2 class="mainSubitle"><div>Salt Lake, UT 84115 · <a href="mailto:name@email.com">Joshuatb6@gmail.com</a></div></h2>
-            <p>I am a Developer at Pearagon, a HubSpot Diamond Partner. I work with a small team to build complex, solution-oriented business automation and applications. I've built many different custom integrations and custom RESTful APIs for customer portals. I am also a HubSpot Community Champion and a top HubSpot developer. I am proficient in TypeScript, JavaScript, C#, and Java. Currently, I am studying computer science at the University of Utah in addition to working at Pearagon.</p>
+            <h2 class="mainSubitle"><div>Salt Lake, UT 84115 · <a href="mailto:joshuatb6@gmail.com">Joshuatb6@gmail.com</a></div></h2>
+            <p>I am a Software Engineer at Neighbor, the leading peer to peer storage marketplace. I work with a small team to build complex, solution-oriented business automation and applications. I've built many RESTful APIs and payment handling services. I am also a HubSpot Community Champion and a top HubSpot developer. I am proficient in TypeScript, JavaScript, Go, Ruby on Rails, C#, and Java.</p>
             <img class="mainPhoto" src="/img/me.jpeg" alt="Me Joshua Beatty">
         </div>
     </div>
